@@ -57,4 +57,4 @@ for index, row in df.iterrows():
 
 #gmap.scatter(df['lat'], df['long'], 'k', marker=True)
 
-gmap.draw("mymap.html")
+gmap.draw("index.html")
