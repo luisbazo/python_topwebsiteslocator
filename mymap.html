@@ -1,0 +1,1094 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(0.000000, 0.000000);
+		var myOptions = {
+			zoom: 2,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.com  #1",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.760000, -98.500000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "youtube.com  #2",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.459000, -122.178100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "facebook.com  #3",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "baidu.com  #4",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.760000, -98.500000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "yahoo.com  #5",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.610300, -122.334100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "amazon.com  #6",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.789800, -122.394200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "wikipedia.org  #7",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "qq.com  #8",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.in  #9",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.775800, -122.412800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "twitter.com  #10",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.680100, -122.120600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "live.com  #11",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(30.293600, 120.161400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "taobao.com  #12",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.jp  #13",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.680100, -122.120600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "bing.com  #14",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.634400, -122.342200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "instagram.com  #15",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "weibo.com  #16",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "sina.com.cn  #17",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "linkedin.com  #18",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.685000, 139.751400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "yahoo.co.jp  #19",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.680100, -122.120600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "msn.com  #20",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(60.000000, 100.000000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "vk.com  #21",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.de  #22",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(55.738600, 37.606800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "yandex.ru  #23",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "hao123.com  #24",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.uk  #25",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "reddit.com  #26",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.280300, -121.956700);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "ebay.com  #27",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.fr  #28",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.775800, -122.412800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "t.co  #29",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(31.045600, 121.399700);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "tmall.com  #30",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.br  #31",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(23.116700, 113.250000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "360.cn  #32",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "sohu.com  #33",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.610300, -122.334100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "amazon.co.jp  #34",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "pinterest.com  #35",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(55.738600, 37.606800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "mail.ru  #36",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.382400, 4.899500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "onclickads.net  #37",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.634400, -122.342200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "netflix.com  #38",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "google.it  #39",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "google.ru  #40",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-22.830500, -43.219200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "microsoft.com  #41",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "google.es  #42",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.748400, -122.415600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "wordpress.com  #43",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "gmw.cn  #44",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(40.739100, -73.982600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "tumblr.com  #45",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.387400, -121.902400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "PayPal.com  #46",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "blogspot.com  #47",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "imgur.com  #48",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "stackoverflow.com  #49",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.526000, -122.355800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "aliexpress.com  #50",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.511200, 126.974100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "Naver.com  #51",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(55.738600, 37.606800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "ok.ru  #52",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.323000, -122.032200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "apple.com  #53",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "github.com  #54",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.mx  #55",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "chinadaily.com.cn  #56",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.345600, 4.873900);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "xvideos.com  #57",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.610300, -122.334100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "imdb.com  #58",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFA500.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.kr  #59",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.382400, 4.899500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "pornhub.com  #60",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.583900, -122.299500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "fc2.com  #61",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "jd.com  #62",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(30.293600, 120.161400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "163.com  #63",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "google.ca  #64",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.hk  #65",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.382400, 4.899500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "xhamster.com  #66",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(32.929900, -96.835300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "whatsapp.com  #67",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.610300, -122.334100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "amazon.in  #68",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.751000, -97.822000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "office.com  #69",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.tr  #70",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(20.045800, 110.341700);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "tianya.cn  #71",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.id  #72",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(34.772500, 113.726600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "youku.com  #73",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.690000, 139.690000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "rakuten.co.jp  #74",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.760700, -122.484200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "craigslist.org  #75",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.610300, -122.334100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "amazon.de  #76",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(42.403000, -71.259000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "bongacams.com  #77",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.685000, 139.751400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "nicovideo.jp  #78",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "google.pl  #79",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "soso.com  #80",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(30.293600, 120.161400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "bilibili.com  #81",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "dropbox.com  #82",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFF00.png');
+		var marker = new google.maps.Marker({
+		title: "xinhuanet.com  #83",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.751000, -97.822000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "outbrain.com  #84",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(25.039200, 121.525000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "pixnet.net  #85",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.526000, -122.355800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "alibaba.com  #86",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(30.293600, 120.161400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "alipay.com  #87",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.680100, -122.120600);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "microsoftonline.com  #88",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.tw  #89",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.382400, 4.899500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "booking.com  #90",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.au  #91",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(32.580300, -96.744000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "popads.net  #92",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(39.928900, 116.388300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "cntv.cn  #93",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.382400, 4.899500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "amazon.co.uk  #94",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(42.362600, -71.084300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "diply.com  #95",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(21.033300, 105.850000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "coccoc.com  #96",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(33.749000, -84.388000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "cnn.com  #97",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(51.514200, -0.093100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "bbc.co.uk  #98",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.583900, -122.299500);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "twitch.tv  #99",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.769700, -122.393300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "wikia.com  #100",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.th  #101",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.ar  #102",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(33.786600, -118.298700);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "go.com  #103",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "google.nl  #104",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.280300, -121.956700);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "ebay.co.uk  #105",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.345600, 4.873900);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "xnxx.com  #106",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-22.900000, -43.233300);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "globo.com  #107",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.ua  #108",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-22.830500, -43.219200);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "uol.com.br  #109",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(55.738600, 37.606800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "avito.ru  #110",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.co  #111",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(42.403000, -71.259000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "redtube.com  #112",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "google.co.th  #113",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "google.com.ph  #114",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "doubleclick.net  #115",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(52.250000, 21.000000);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "onet.pl  #116",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(37.419200, -122.057400);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "googleadservices.com  #117",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(40.797500, -77.902100);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "accuweather.com  #118",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(35.745400, -81.684800);
+		var img = new google.maps.MarkerImage('/Library/Python/2.7/site-packages/gmplot/markers/FFFFFF.png');
+		var marker = new google.maps.Marker({
+		title: "googleweblight.com  #119",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
