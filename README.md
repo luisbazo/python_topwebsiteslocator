@@ -33,5 +33,5 @@ Prerequisites
 
   Extensions
 
-    The map can be enhaced and also the library gmplot to support publish the map in a web site without the library installed.
-    More labels and data could be displayed in the map.
+  The map can be enhaced and also the library gmplot to support publish the map in a web site without the library installed.
+  More labels and data could be displayed in the map.
