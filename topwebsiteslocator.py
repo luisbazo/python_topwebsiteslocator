@@ -35,26 +35,9 @@ for index, row in df.iterrows():
   json_string = f.read()
   f.close()
   location = json.loads(json_string)
-
-  df.loc[index,"city"] = url + ' ' + ' #' + str(df.loc[index,"ranking"])
-  df.loc[index,"long"] = location['longitude']
-  df.loc[index,"lat"] = location['latitude']
+  text = url + ' ' + ' #' + str(df.loc[index,"ranking"])
 
   color = getColour(float(df.loc[index, "ranking"]), df['ranking'].max())
-
-  gmap.marker(df.loc[index,"lat"], df.loc[index,"long"], color,title=df.loc[index,"city"])
-
-
-#gmap.plot(latitudes, longitudes, 'cornflowerblue', edge_width=10)
-#gmap.scatter(more_lats, more_lngs, '#3B0B39', size=40, marker=False)
-#gmap.scatter(marker_lats, marker_lngs, 'k', marker=True)
-#gmap.heatmap(heat_lats, heat_lngs)
-
-#gmap.plot(37.428, -122.145, 'cornflowerblue', edge_width=10)
-#gmap.scatter(37.428, -122.145, '#3B0B39', size=40, marker=False)
-#gmap.scatter(37.428, -122.145, 'k', marker=True)
-#gmap.heatmap(37.428, -122.145)
-
-#gmap.scatter(df['lat'], df['long'], 'k', marker=True)
+  gmap.marker(location['latitude'], location['longitude'], color,title=text)
 
 gmap.draw("index.html")
